@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(315deg, black 0%, grey 1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    section h1, h2 {
+        color: black;
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    section h3 {
+        color: black;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    .quiz-container {
+        background-color: rgb(163, 157, 157);
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+        width: 500px;
+        overflow: hidden;
+        padding-top: 0%;
+        text-align: left;
+
+    }
+
+    .quiz-header {
+        padding: 4rem;
+    }
+
+    h2 {
+        padding: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    ul li label {
+        cursor: pointer;
+    }
+
+    button {
+        background-color: rgb(205, 197, 197);
+        color: black;
+        border: none;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-family: inherit;
+        padding: 1.3rem;
+    }
+
+    button:hover {
+        background-color: rgb(205, 197, 197);
+    }
+
+    button:focus {
+        outline: none;
+        background-color: rgb(205, 197, 197);
+    }
+
+    #return {
+        color: white;
+        border: none;
+        text-decoration: none;
+    }
+
+    #startbtn {
+        font-size: 2rem;
+        color: black;
+        background: none;
+        text-decoration: none;
+    }
+
+    #howtoplay {
+        color: black;
+        background: none;
+
+    }
+
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+
+    }
+
+    .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+
+    }
+
+    .popup .popuptext::after {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+
+
+    }
+
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
